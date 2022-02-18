@@ -12,8 +12,8 @@ router.get('/', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
     Resources.create(req.body)
-    .then(newProject => {
-        res.status(201).json(newProject)
+    .then(newResource => {
+        res.status(201).json(newResource)
     })
     .catch(next)
 })
